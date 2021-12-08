@@ -23,8 +23,7 @@ namespace Image_Stitching_Emgucv
         private void btnStitch_Click(object sender, RoutedEventArgs e)
         {
             //Change this file path to the path where the images you want to stich are located
-            string filePath = System.IO.Directory.GetParent(System.IO.Directory.GetParent
-                (Environment.CurrentDirectory).ToString()).ToString() + @"/Images/";
+            string filePath = @"./Images/";
 
             //Read all the images from the path and store them in a list
             List<Mat> images = ImageStitching.GetImages(filePath);
